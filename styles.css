@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif !important;
+    background-color: #b2c7a2 !important;
+    color: #26332A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    min-height: 100%;
+}
+h1, h2, h3 {
+    font-family: 'Comfortaa', sans-serif !important;
+}
+/* Left menu */
+.menu {
+    width: 200px;
+    height: 100vh;
+    background-color: #5d7661;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 2;
+}
+
+.menu h2 {
+    text-align: center;
+    color: white;
+}
+
+.menu a { 
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    background-color: #8FAF8F;
+    color: #26332A;
+}
+
+/* Main content */
+.content {
+    margin-left: 260px;
+    padding: 30px;
+    flex: 1;
+}
+
+/* Hobby and project cards */
+.hobby-card {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px;
+    margin: 0;
+
+    background-color: #DDE8D5;
+    border: 1px solid #8FAF8F;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.hobby-card h2 {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #355E3B;
+}
+.hobby-card {
+    background-color:  #DDE8D5 !important;
+}
+/* Home card */
+.home-card {
+    min-height: 250px;
+    padding: 20px;
+    background-color: #DDE8D5;
+    border: 1px solid #8FAF8F;
+    border-radius: 10px;
+}
+.home-card {
+    background-color:  #DDE8D5 !important;
+}
+.title {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-left: 400px;
+}
+/* Flip card */
+.flip-card {
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Flip when clicked */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and back */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    backface-visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Front */
+.flip-card-front {
+    background-color: #DDE8D5;
+    border: 1px solid #8FAF8F;
+}
+
+/* Back */
+.flip-card-back {
+    background-color: #8FAF8F;
+    border: 1px solid #355E3B;
+    transform: rotateY(180deg);
+    color: white;
+    text-align: center;
+}
+
+/* Headings */
+.flip-card-front h2,
+.flip-card-back h2 {
+    margin-bottom: 10px;
+}
+.footer-card {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #DDE8D5;
+    border: 1px solid #8FAF8F;
+    border-radius: 0px;
+
+    text-align: center;
+    margin-top: 50px;
+}
+.my-photo {
+    width: 250px;
+}
+.picture-card {
+padding: 15px;
+border: 3px solid #8FAF8F;
+border-radius: 15px;
+background-color: #DDE8D5;
+display: inline-block;
+}
