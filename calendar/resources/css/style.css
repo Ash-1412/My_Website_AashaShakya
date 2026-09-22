@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+
+}
+body {
+    height: 100%;
+    background-color: rgb(171, 214, 151);
+  }
+  
+  .event:hover {
+    cursor: pointer;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #calendar {
+    height: 100vh !important;
+  }
+  #sunday,
+#monday,
+#tuesday,
+#wednesday,
+#thursday,
+#friday,
+#saturday {
+    background-color: rgb(125, 159, 110) !important;
+    color: white !important;
+    font-family: 'Baloo 2', cursive !important;
+}
+.day {
+    font-size: 24px;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: underline;
+}
+.custom-container {
+    width: 100%;
+    padding: 20%;
+}
+.category-academic {
+    background-color: #c0b1dd!important;
+    color: #2d1b36!important;
+}
+
+.category-work {
+    background-color: #c0e3c1!important;
+    color: #163b38!important;
+}
+
+.category-personal {
+    background-color: #a4c6de!important;
+    color: #4a1729!important;
+}
+.category-social {
+    background-color: #dab3d8!important;
+    color: #4a1729!important;
+}
+
+.btn-primary {
+    background-color: rgb(125, 159, 110);
+    border-color: rgb(125, 159, 110);
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 8px 20px;
+}
+
+.btn-primary:hover {
+    background-color: rgb(95, 125, 82);
+    border-color: rgb(95, 125, 82);
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: rgb(95, 125, 82) !important;
+    border-color: rgb(95, 125, 82) !important;
+    box-shadow: none !important;
+}
